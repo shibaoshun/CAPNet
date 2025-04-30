@@ -1,1 +1,7 @@
-# CAPNet
+# Cross-organ all-in-one parallel compressed sensing magnetic resonance imaging
+
+Abstract: Recent advances in deep learning-based parallel compressed sensing magnetic resonance imaging (p-CSMRI) have significantly improved reconstruction quality. However, current p-CSMRI methods often require training separate deep neural network (DNN) for each organ due to anatomical variations, creating a barrier to developing generalized medical image reconstruction systems. To address this, we propose CAPNet (cross-organ all-in-one deep unfolding p-CSMRI network), a unified framework that implements a p-CSMRI iterative algorithm via three specialized modules: auxiliary variable module, prior module, and data consistency module. Recognizing that p-CSMRI systems often employ varying sampling ratios for different organs, resulting in organ-specific artifact patterns, we introduce an artifact generation submodule, which extracts and integrates artifact features into the data consistency module to enhance the discriminative capability of the overall network. For the prior module, we design an organ structure-prompt generation submodule that leverages structural features extracted from the segment anything model (SAM) foundation model to create cross-organ prompts. These prompts are strategically incorporated into the prior module through an organ structure-aware Mamba submodule. Comprehensive evaluations on a cross-organ dataset confirm that CAPNet achieves state-of-the-art reconstruction performance across multiple anatomical structures using a single unified model.
+
+## Noticed
+
+Our code will be published after the acceptance of the paper.
